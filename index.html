@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB FINDER</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="con">
+        <div class="hea">
+            <h2>
+                LAB TIME TABLE
+            </h2>
+        </div>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>DAYS/<br>PERIODS</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <!--******************* 1 ROW ***************************-->
+                <tr>
+                    <th>
+                        MON
+                    </th>
+                    <td>
+                        <button onclick="arowa()">CLASS-a</button>
+                    </td>
+                    <td>
+                        <button onclick="arowb()">CLASS-b</button>
+                    </td>
+                    <td>
+                        <button onclick="arowc()">CLASS-c</button>
+                    </td>
+                    <td>
+                        <button onclick="arowd()">CLASS-d</button>
+                    </td>
+                    <td>
+                        <button onclick="arowe()">CLASS-e</button>
+                    </td>
+                </tr>
+                <!--***************** 2 ROW ************************-->
+                <tr>
+                    <th>
+                        TUE
+                    </th>
+                    <td>
+                        <button onclick="browa()">CLASS-a</button>
+                    </td>
+                    <td>
+                        <button onclick="browb()">CLASS-b</button>
+                    </td>
+                    <td>
+                        <button onclick="browc()">CLASS-c</button>
+                    </td>
+                    <td>
+                        <button onclick="browd()">CLASS-d</button>
+                    </td>
+                    <td>
+                        <button onclick="browe()">CLASS-e</button>
+                    </td>
+                </tr>
+                <!--****************** 3 ROW ************************-->
+                <tr>
+                    <th>
+                        WED
+                    </th>
+                    <td>
+                        <button onclick="crowa()">CLASS-a</button>
+                    </td>
+                    <td>
+                        <button onclick="crowd()">CLASS-b</button>
+                    </td>
+                    <td>
+                        <button onclick="crowc()">CLASS-c</button>
+                    </td>
+                    <td>
+                        <button onclick="crowd()">CLASS-d</button>
+                    </td>
+                    <td>
+                        <button onclick="crowe()">CLASS-e</button>
+                    </td>
+                </tr>
+                <!--****************** 4 ROW ********************-->
+                <tr>
+                    <th>
+                        THU
+                    </th>
+                    <td>
+                        <button onclick="drowa()">CLASS-a</button>
+                    </td>
+                    <td>
+                        <button onclick="drowb()">CLASS-b</button>
+                    </td>
+                    <td>
+                        <button onclick="drowc()">CLASS-c</button>
+                    </td>
+                    <td>
+                        <button onclick="drowd()">CLASS-d</button>
+                    </td>
+                    <td>
+                        <button onclick="drowe()">CLASS-e</button>
+                    </td>
+                </tr>
+                <!--*********** 5 ROW *************** -->
+                <tr>
+                    <th>
+                        FRI
+                    </th>
+                    <td>
+                        <button onclick="erowa()">CLASS-a</button>
+                    </td>
+                    <td>
+                        <button onclick="erowb()">CLASS-b</button>
+                    </td>
+                    <td>
+                        <button onclick="erowc()">CLASS-c</button>
+                    </td>
+                    <td>
+                        <button onclick="erowd()">CLASS-d</button>
+                    </td>
+                    <td>
+                        <button onclick="erowe()">CLASS-e</button>
+                    </td>
+                </tr>
+                <!--*********** 6 ROW *************** -->
+                <tr>
+                    <th>
+                        SAT
+                    </th>
+                    <td>
+                        <button onclick="frowa()">CLASS-a</button>
+                    </td>
+                    <td>
+                        <button onclick="frowb()">CLASS-b</button>
+                    </td>
+                    <td>
+                        <button onclick="frowc()">CLASS-c</button>
+                    </td>
+                    <td>
+                        <button onclick="frowd()">CLASS-d</button>
+                    </td>
+                    <td>
+                        <button onclick="frowe()">CLASS-e</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="info">
+            <div class="infocon">
+            <h3>Please select the class for the information</h3>
+            <form>
+                <input type="text" placeholder="empty" disabled id="show">
+                <button onclick="del()" id="right">DELETE</button>
+                <button onclick="edit()" id="left">EDIT</button>
+            </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
