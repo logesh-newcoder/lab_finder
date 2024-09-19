@@ -1,128 +1,140 @@
 var a=document.getElementById("show");
 
+var a1=document.getElementById("arowa");
+var a2=document.getElementById("arowb");
+var a3=document.getElementById("arowc");
+var a4=document.getElementById("arowd");
+var a5=document.getElementById("arowe");
+
+var b1=document.getElementById("browa");
+var b2=document.getElementById("browb");
+var b3=document.getElementById("browc");
+var b4=document.getElementById("browd");
+var b5=document.getElementById("browe");
+
+var c1=document.getElementById("crowa");
+var c2=document.getElementById("crowb");
+var c3=document.getElementById("crowc");
+var c4=document.getElementById("crowd");
+var c5=document.getElementById("crowe");
+
+var d1=document.getElementById("drowd");
+var d2=document.getElementById("drowd");
+var d3=document.getElementById("drowd");
+var d4=document.getElementById("drowd");
+var d5=document.getElementById("drowd");
+
+var e1=document.getElementById("erowa");
+var e2=document.getElementById("erowb");
+var e3=document.getElementById("erowc");
+var e4=document.getElementById("erowd");
+var e5=document.getElementById("erowe");
+
+var f1=document.getElementById("frowa");
+var f2=document.getElementById("frowb");
+var f3=document.getElementById("frowc");
+var f4=document.getElementById("frowd");
+var f5=document.getElementById("frowe");
+
+
 function arowa(){
-    a.value="class-a"
-    console.log(a.value)
+    deliver(a1);
 }
 function arowb(){
-    a.value="class-b"
-    console.log(a.value)
+    deliver(a2);
 }
 function arowc(){
-    a.value="class-c"
-    console.log(a.value)
+    deliver(a3);
 }
 function arowd(){
-    a.value="class-d"
-    console.log(a.value)
+    deliver(a4);
 }
 function arowe(){
-    a.value="class-e"
-    console.log(a.value)
+    deliver(a5);
 }
 
 function browa(){
-    a.value="class-a"
-    console.log(a.value)
+    deliver(b1);
 }
 function browb(){
-    a.value="class-b"
-    console.log(a.value)
+    deliver(b2);
 }
 function browc(){
-    a.value="class-c"
-    console.log(a.value)
+    deliver(b3);
 }
 function browd(){
-    a.value="class-d"
-    console.log(a.value)
+    deliver(b4);
 }
 function browe(){
-    a.value="class-e"
-    console.log(a.value)
+    deliver(b5);
 }
 
 function crowa(){
-    a.value="class-a"
-    console.log(a.value)
+    deliver(c1);
 }
 function crowb(){
-    a.value="class-b"
-    console.log(a.value)
+    deliver(c2);
 }
 function crowc(){
-    a.value="class-c"
-    console.log(a.value)
+    deliver(c3);
 }
 function crowd(){
-    a.value="class-d"
-    console.log(a.value)
+    deliver(c4);
 }
 function crowe(){
-    a.value="class-e"
-    console.log(a.value)
+    deliver(c5);
 }
 
 function drowa(){
-    a.value="class-a"
-    console.log(a.value)
+    deliver(d1);
 }
 function drowb(){
-    a.value="class-b"
-    console.log(a.value)
+    deliver(d2);
 }
 function drowc(){
-    a.value="class-c"
-    console.log(a.value)
+    deliver(d3);
 }
 function drowd(){
-    a.value="class-d"
-    console.log(a.value)
+    deliver(d4);
 }
 function drowe(){
-    a.value="class-e"
-    console.log(a.value)
+    deliver(d5);
 }
 
 function erowa(){
-    a.value="class-a"
-    console.log(a.value)
+    deliver(e1);
 }
 function erowb(){
-    a.value="class-b"
-    console.log(a.value)
+    deliver(e2);
 }
 function erowc(){
-    a.value="class-c"
-    console.log(a.value)
+    deliver(e3);
 }
 function erowd(){
-    a.value="class-d"
-    console.log(a.value)
+    deliver(e4);
 }
 function erowe(){
-    a.value="class-e"
-    console.log(a.value)
+    deliver(e5);
 }
 
 function frowa(){
-    a.value="class-a"
-    console.log(a.value)
+    deliver(f1);
 }
 function frowb(){
-    a.value="class-b"
-    console.log(a.value)
+    deliver(f2);
 }
 function frowc(){
-    a.value="class-c"
-    console.log(a.value)
+    deliver(f3);
 }
 function frowd(){
-    a.value="class-d"
-    console.log(a.value)
+    deliver(f4);
 }
 function frowe(){
-    a.value="class-e"
-    console.log(a.value)
+    deliver(f5);
 }
 
+function deliver(content){
+    let bu=content;
+    console.log(bu.textContent);
+    a.value=bu.textContent;
+}
