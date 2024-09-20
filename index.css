@@ -74,7 +74,7 @@ td button .par{
 }
 .infocon input{
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -155,7 +155,7 @@ td button .par{
         font-size: 1.4rem;
     }
     .infocon input{
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
         padding: 0.7rem;
@@ -164,7 +164,7 @@ td button .par{
         right: 5%;
         bottom: 5%;
         padding: 0.7rem;
-        font-size: 1rem;
+        font-size: 0.7rem;
     }        
 }
 
@@ -216,6 +216,6 @@ td button .par{
         right: 5%;
         bottom: 5%;
         padding: 0.3rem;
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }        
 }
