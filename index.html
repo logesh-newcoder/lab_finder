@@ -7,163 +7,90 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="con">
-        <div class="hea">
-            <h2>
-                LAB TIME TABLE
-            </h2>
-        </div>
-        <div class="tab">
+    <div class="container">
+        <header>
+            <h2>LAB TIME TABLE</h2>
+        </header>
+        <div class="table-container">
             <table>
-                <tr>
-                    <th>DAYS/<br>PERIODS</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                </tr>
-                <!--******************* 1 ROW ***************************-->
-                <tr>
-                    <th>
-                        MON
-                    </th>
-                    <td>
-                        <button onclick="arowa()">CLASS-a<div class="par" id="arowa"><p>hai 1</p></div></button>
-                    </td>
-                    <td>
-                        <button onclick="arowb()">CLASS-b<div class="par" id="arowb"><p>hai 2</p></div></button>
-                    </td>
-                    <td>
-                        <button onclick="arowc()">CLASS-c<div class="par" id="arowc"><p>hai 3</p></div></button>
-                    </td>
-                    <td>
-                        <button onclick="arowd()">CLASS-d<div class="par" id="arowd"><p>hai 4</p></div></button>
-                    </td>
-                    <td>
-                        <button onclick="arowe()">CLASS-e<div class="par" id="arowe"><p>hai 5</p></div></button>
-                    </td>
-                </tr>
-                <!--***************** 2 ROW ************************-->
-                <tr>
-                    <th>
-                        TUE
-                    </th>
-                    <td>
-                        <button onclick="browa()">CLASS-a<div class="par" id="browa">hai 11</div></button>
-                    </td>
-                    <td>
-                        <button onclick="browb()">CLASS-b<div class="par" id="browb">hai 12</div></button>
-                    </td>
-                    <td>
-                        <button onclick="browc()">CLASS-c<div class="par" id="browc">hai 13</div></button>
-                    </td>
-                    <td>
-                        <button onclick="browd()">CLASS-d<div class="par" id="browd">hai 14</div></button>
-                    </td>
-                    <td>
-                        <button onclick="browe()">CLASS-e<div class="par" id="browe">hai 15</div></button>
-                    </td>
-                </tr>
-                <!--****************** 3 ROW ************************-->
-                <tr>
-                    <th>
-                        WED
-                    </th>
-                    <td>
-                        <button onclick="crowa()">CLASS-a<div class="par" id="crowa">hai 21</div></button>
-                    </td>
-                    <td>
-                        <button onclick="crowb()">CLASS-b<div class="par" id="crowb">hai 22</div></button>
-                    </td>
-                    <td>
-                        <button onclick="crowc()">CLASS-c<div class="par" id="crowc">hai 23</div></button>
-                    </td>
-                    <td>
-                        <button onclick="crowd()">CLASS-d<div class="par" id="crowd">hai 24</div></button>
-                    </td>
-                    <td>
-                        <button onclick="crowe()">CLASS-e<div class="par" id="crowe">hai 25</div></button>
-                    </td>
-                </tr>
-                <!--****************** 4 ROW ********************-->
-                <tr>
-                    <th>
-                        THU
-                    </th>
-                    <td>
-                        <button onclick="drowa()">CLASS-a<div class="par" id="drowa">hai 31</div></button>
-                    </td>
-                    <td>
-                        <button onclick="drowb()">CLASS-b<div class="par" id="drowb">hai 32</div></button>
-                    </td>
-                    <td>
-                        <button onclick="drowc()">CLASS-c<div class="par" id="drowc">hai 33</div></button>
-                    </td>
-                    <td>
-                        <button onclick="drowd()">CLASS-d<div class="par" id="drowd">hai 34</div></button>
-                    </td>
-                    <td>
-                        <button onclick="drowe()">CLASS-e<div class="par" id="drowe">hai 35</div></button>
-                    </td>
-                </tr>
-                <!--*********** 5 ROW *************** -->
-                <tr>
-                    <th>
-                        FRI
-                    </th>
-                    <td>
-                        <button onclick="erowa()">CLASS-a<div class="par" id="erowa">hai 41</div></button>
-                    </td>
-                    <td>
-                        <button onclick="erowb()">CLASS-b<div class="par" id="erowb">hai 42</div></button>
-                    </td>
-                    <td>
-                        <button onclick="erowc()">CLASS-c<div class="par" id="erowc">hai 43</div></button>
-                    </td>
-                    <td>
-                        <button onclick="erowd()">CLASS-d<div class="par" id="erowd">hai 44</div></button>
-                    </td>
-                    <td>
-                        <button onclick="erowe()">CLASS-e<div class="par" id="erowe">hai 45</div></button>
-                    </td>
-                </tr>
-                <!--*********** 6 ROW *************** -->
-                <tr>
-                    <th>
-                        SAT
-                    </th>
-                    <td>
-                        <button onclick="frowa()">CLASS-a<div class="par" id="frowa">hai 51</div></button>
-                    </td>
-                    <td>
-                        <button onclick="frowb()">CLASS-b<div class="par" id="frowb">hai 52</div></button>
-                    </td>
-                    <td>
-                        <button onclick="frowc()">CLASS-c<div class="par" id="frowc">hai 53</div></button>
-                    </td>
-                    <td>
-                        <button onclick="frowd()">CLASS-d<div class="par" id="frowd">hai 54</div></button>
-                    </td>
-                    <td>
-                        <button onclick="frowe()">CLASS-e<div class="par" id="frowe">hai 55</div></button>
-                    </td>
-                </tr>
+                <thead>
+                    <tr class="dayper">
+                        <th>DAYS/ PERIODS</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="dayper">MON</th>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
+                    </tr>
+                    <tr>
+                        <th class="dayper">TUE</th>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
+                    </tr>
+                    <tr>
+                        <th class="dayper">WED</th>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
+                    </tr>
+                    <tr>
+                        <th class="dayper">THU</th>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
+                    </tr>
+                    <tr>
+                        <th class="dayper">FRI</th>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
+                    </tr>
+                    <tr>
+                        <th class="dayper">SAT</th>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
         <div class="info">
-            <div class="infocon">
-            <h3>Please select the class for the information</h3>
-            <form>
-                <input type="text" placeholder="empty" id="show" disabled>
-                <button id="right" onclick="dele()">EDIT</button>
-            </form>
+            <div class="info-section">
+                <h3>Please select the class for information</h3>
+                <form id="info-form">
+                    <textarea type="text" id="show" placeholder="Information will be shown here" readonly></textarea>
+                    <div class="btn-container">
+                        <button type="button" onclick="insertInfo()" id="ins">INSERT</button>
+                        <button type="button" onclick="deleteInfo()" id="del">DELETE</button>
+                    </div>
+                </form>
             </div>
         </div>
 
     </div>
 
-    <script src="indexnew.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
