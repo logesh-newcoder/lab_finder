@@ -84,9 +84,11 @@ td button{
 }
 #ins{
     background-color: green;
+    display: none;
 }
 #del{
     background-color: red;
+    display: none;
 }
 /*---------------------------media qurey for small lapto and desktop------------------------*/
 @media (min-width:770px) and (max-width:1200px){
