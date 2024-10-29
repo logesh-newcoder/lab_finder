@@ -1,8 +1,12 @@
 const insertButton = document.getElementById('ins');
 const deleteButton = document.getElementById('del');
 const infoTextarea = document.getElementById('show');
+const selectclass = document.getElementById('classname');
 
 function showInfo(className) {
+    selectclass.value=className;
+    selectclass.setAttribute('name', 'classname');
+    console.log(selectclass.value);
     infoTextarea.value = `Information about ${className}`;
     deleteButton.style.display = 'block';
     insertButton.style.display = 'none'; 
@@ -16,14 +20,14 @@ function deleteInfo(receiver) {
         deleteButton.style.display = 'none';     
         insertButton.style.display = 'block'; 
         infoTextarea.removeAttribute('readonly');
-        infoTextarea.setAttribute('name', 'classname');
+        selectclass.setAttribute('name', 'classname');
     } else {
         alert("Password is wrong");
     }
 }
 
 function insertInfo(){
-    console.log(infoTextarea.className);
-    console.log("Textarea content: ", infoTextarea.value);
+    console.log(selectclass.value);
+    console.log(infoTextarea.value);
     insertButton.style.display = 'none'; 
 }
