@@ -26,51 +26,51 @@
                 <tbody>
                     <tr>
                         <th class="dayper">MON</th>
-                        <td><button onclick="showInfo('101')">CLASS-a</button></td>
-                        <td><button onclick="showInfo('102')">CLASS-b</button></td>
-                        <td><button onclick="showInfo('103')">CLASS-c</button></td>
-                        <td><button onclick="showInfo('104')">CLASS-d</button></td>
-                        <td><button onclick="showInfo('105')">CLASS-e</button></td>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
                     </tr>
                     <tr>
                         <th class="dayper">TUE</th>
-                        <td><button onclick="showInfo('201')">CLASS-a</button></td>
-                        <td><button onclick="showInfo('202')">CLASS-b</button></td>
-                        <td><button onclick="showInfo('203')">CLASS-c</button></td>
-                        <td><button onclick="showInfo('204')">CLASS-d</button></td>
-                        <td><button onclick="showInfo('205')">CLASS-e</button></td>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
                     </tr>
                     <tr>
                         <th class="dayper">WED</th>
-                        <td><button onclick="showInfo('301')">CLASS-a</button></td>
-                        <td><button onclick="showInfo('302')">CLASS-b</button></td>
-                        <td><button onclick="showInfo('303')">CLASS-c</button></td>
-                        <td><button onclick="showInfo('304')">CLASS-d</button></td>
-                        <td><button onclick="showInfo('305')">CLASS-e</button></td>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
                     </tr>
                     <tr>
                         <th class="dayper">THU</th>
-                        <td><button onclick="showInfo('401')">CLASS-a</button></td>
-                        <td><button onclick="showInfo('402')">CLASS-b</button></td>
-                        <td><button onclick="showInfo('403')">CLASS-c</button></td>
-                        <td><button onclick="showInfo('404')">CLASS-d</button></td>
-                        <td><button onclick="showInfo('405')">CLASS-e</button></td>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
                     </tr>
                     <tr>
                         <th class="dayper">FRI</th>
-                        <td><button onclick="showInfo('501')">CLASS-a</button></td>
-                        <td><button onclick="showInfo('502')">CLASS-b</button></td>
-                        <td><button onclick="showInfo('503')">CLASS-c</button></td>
-                        <td><button onclick="showInfo('504')">CLASS-d</button></td>
-                        <td><button onclick="showInfo('505')">CLASS-e</button></td>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
                     </tr>
                     <tr>
                         <th class="dayper">SAT</th>
-                        <td><button onclick="showInfo('601')">CLASS-a</button></td>
-                        <td><button onclick="showInfo('602')">CLASS-b</button></td>
-                        <td><button onclick="showInfo('603')">CLASS-c</button></td>
-                        <td><button onclick="showInfo('604')">CLASS-d</button></td>
-                        <td><button onclick="showInfo('605')">CLASS-e</button></td>
+                        <td><button onclick="showInfo('CLASS-a')">CLASS-a</button></td>
+                        <td><button onclick="showInfo('CLASS-b')">CLASS-b</button></td>
+                        <td><button onclick="showInfo('CLASS-c')">CLASS-c</button></td>
+                        <td><button onclick="showInfo('CLASS-d')">CLASS-d</button></td>
+                        <td><button onclick="showInfo('CLASS-e')">CLASS-e</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -79,8 +79,9 @@
         <div class="info">
             <div class="info-section">
                 <h3>Please select the class for information</h3>
-                <form id="info-form" method="post">
-                    <textarea type="text" id="show" placeholder="Information will be shown here" readonly></textarea>
+                <form id="info-form">
+                    <input type="text" id="classname" placeholder="Selected class name" name="class_name" readonly><br>
+                    <textarea type="text" id="show" placeholder="Information will be shown here" name="class_content" readonly></textarea>
                     <div class="btn-container">
                         <button type="button" onclick="insertInfo()" id="ins">INSERT</button>
                         <button type="button" onclick="deleteInfo()" id="del">DELETE</button>
