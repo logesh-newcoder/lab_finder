@@ -12,8 +12,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     display: grid;
-    grid-template-areas: 'head' 'main' 'footer';
-    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 'head' 'main';
+    grid-template-rows: auto 1fr;
 }
 header{
     grid-area: head;
@@ -32,13 +32,27 @@ header .top{
     width: 100%;
     background-color: steelblue;
     padding: 10px;
-
+    position: relative;
 }
 .top h2 {
     text-align: center;
     font-size: 3.5vw;
 }
-
+.top a{
+    position: absolute;
+    top: 0%;
+    right: 0.7rem;
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top a img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
 /*======================table style start===============*/
 
 main .table {
@@ -142,43 +156,6 @@ form #sub {
 form button {
     background-color: green;
 }
-
-/*======================footer style start===============*/
-footer .foot {
-    width: 100%;
-    background-color: steelblue;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    place-items: center;
-}
-
-a {
-    color: black;
-}
-
-.cpoyright span{
-    font-size: 2vw;
-}
-
-.github {
-    width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-}
-
-.github img {
-    width: 3rem;
-    height: 3rem;
-    margin: 5px;
-}
-
-.mail {
-    font-size: 2vw;
-}
 .php{
     display: none;
 }
@@ -186,9 +163,20 @@ a {
 
 @media (max-width: 780px) {
 /*======================top style start===============*/
+header .top{
+    padding: 5px;
+    position: relative;
+}
 .top h2 {
-    text-align: center;
     font-size: 1.5rem;
+}
+.top a{
+    right: 0.7rem;
+    height: 100%;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*======================table style start===============*/
@@ -253,30 +241,4 @@ form button {
     margin: auto;
 }
 
-
-/*======================footer style start===============*/
-footer .foot {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 7px;
-}
-
-.cpoyright span{
-    font-size: 3vw;
-}
-
-.github {
-    font-size: 3vw;
-}
-
-.github img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 5px;
-}
-
-.mail {
-    font-size: 3vw;
-}
 }
