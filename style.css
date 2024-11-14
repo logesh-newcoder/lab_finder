@@ -15,28 +15,24 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-areas: 'nav' 'sec' 'foot';
-    grid-template-rows: max-content 1fr max-content;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     width: 100%;
-    height: 100%;
-    grid-area: nav;
+    height: max-content;
     background-color: steelblue;
 }
 
 section{
     width: 100%;
     height: 100%;
-    grid-area: sec;
 }
 
 footer {
     width: 100%;
-    height: 100%;
-    grid-area: foot;
+    height: max-content;
     background-color: steelblue;
 }
 
