@@ -1,45 +1,48 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     background: white;
-    overflow: hidden auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-areas: 'nav'
-    'section'
-    'foot';
+    grid-template-areas: 'nav' 'sec' 'foot';
     grid-template-rows: max-content 1fr max-content;
 }
 
-nav{
+nav {
     width: 100%;
     height: 100%;
-    grid-template: nav;
+    grid-area: nav;
     background-color: steelblue;
 }
 
 section{
-    grid-template: section;
+    width: 100%;
+    height: 100%;
+    grid-area: sec;
 }
 
-footer{
-    grid-template: foot;
+footer {
+    width: 100%;
+    height: 100%;
+    grid-area: foot;
     background-color: steelblue;
 }
 
 /*======================nav style start===============*/
 
-nav .top h2{
+nav .top h2 {
     text-align: center;
     font-size: 3.5vw;
     padding: 10px;
@@ -47,41 +50,41 @@ nav .top h2{
 
 /*======================section style start===============*/
 
-section .main{
+section .main {
     width: 100%;
     height: max-content;
 }
 
-/*======================tabel style start===============*/
+/*======================table style start===============*/
 
-.main .table{
+.main .table {
     width: 100%;
     height: max-content;
     margin: 20px 0;
 }
 
-table{
+table {
     min-width: 80%;
     max-width: 95%;
     height: 100%;
     margin: auto;
 }
 
-table .dayper{
+table .dayper {
     background-color: steelblue;
     font-weight: 300;
 }
 
-table,td,th{
+table, td, th {
     border: 2px solid black;
-    border-collapse:collapse ;
+    border-collapse: collapse;
 }
 
-td,th{
+td, th {
     font-size: 2.2vw;
 }
 
-td button{
+td button {
     width: 100%;
     height: 100%;
     border: none;
@@ -91,25 +94,25 @@ td button{
 
 /*======================table down displayer form style start===============*/
 
-.displayer{
+.displayer {
     min-width: 85%;
     max-width: 95%;
     height: max-content;
     background-color: #333;
-    margin: auto auto 5% auto;
+    margin: auto auto 15px auto;
     border: 4px solid steelblue;
     border-radius: 10px;
     padding: 10px;
 }
 
-.displayer h1{
+.displayer h1 {
     font-size: 2vw;
     text-align: center;
     margin: 5px;
     color: white;
 }
 
-.displayer form{
+.displayer form {
     width: 100%;
     height: 100%;
     background-color: white;
@@ -121,7 +124,7 @@ td button{
 }
 
 #classname,
-textarea{
+textarea {
     color: black;
     margin: 10px 0;
     width: 90%;
@@ -129,61 +132,60 @@ textarea{
     border: 2px solid black;
 }
 
-#classname{
+#classname {
     font-size: 1.7vw;
     font-weight: 300;
 }
 
-textarea{
+textarea {
     resize: none;
     height: 90px;
     font-size: 1.5vw;
 }
 
 form #sub,
-form button{
+form button {
     padding: 8px;
     font-size: large;
     border: 2px solid black;
     border-radius: 5px;
     margin: auto;
-
 }
 
-form #sub{
+form #sub {
     background-color: red;
 }
 
-form button{
+form button {
     background-color: green;
 }
 
 /*======================footer style start===============*/
 
-footer{
+footer {
     width: 100%;
     height: max-content;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
-.foot{
+.foot {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     place-items: center;
 }
 
-a{
+a {
     color: black;
 }
 
-.cpoyright{
+.cpoyright span{
     font-size: 2vw;
 }
 
-.github{
+.github {
     width: 100%;
     height: max-content;
     display: flex;
@@ -192,129 +194,118 @@ a{
     font-size: 2vw;
 }
 
-.github img{
+.github img {
     width: 3rem;
     height: 3rem;
     margin: 5px;
 }
 
-.mail{
+.mail {
     font-size: 2vw;
 }
 
 /*======================media query for phone view===============*/
 
-@media (max-width:480px) {
-    /*======================nav style start===============*/
+@media (max-width: 480px) {
+    nav .top h2 {
+        font-size: 4.5vw;
+        padding: 10px;
+    }
 
-nav .top h2{
-    font-size: 4.5vw;
-    padding: 10px;
-}
+    .main .table {
+        width: 100%;
+        height: max-content;
+        margin: 20px 0;
+    }
 
-/*======================tabel style start===============*/
+    table {
+        width: 95%;
+        margin: auto;
+    }
 
-.main .table{
-    width: 100%;
-    height: max-content;
-    margin: 20px 0;
-}
+    td, th {
+        font-size: 2.5vw;
+    }
 
-table{
-    width: 95%;
-    margin: auto;
-}
+    td button {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        font-size: 2.3vw;
+    }
 
-td,th{
-    font-size: 2.5vw;
-}
+    .displayer {
+        width: 90%;
+        height: max-content;
+        margin: auto auto 5% auto;
+        padding: 10px;
+    }
 
-td button{
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    font-size: 2.3vw;
-}
+    .displayer h1 {
+        font-size: 3.5vw;
+        margin: 5px;
+    }
 
-/*======================table down displayer form style start===============*/
+    .displayer form {
+        width: 100%;
+        height: 100%;
+        margin: auto auto 10px auto;
+        padding: 8px;
+    }
 
-.displayer{
-    width: 90%;
-    height: max-content;
-    margin: auto auto 5% auto;
-    padding: 10px;
-}
+    #classname,
+    textarea {
+        margin: 7px 0;
+        width: 90%;
+        padding: 5px;
+    }
 
-.displayer h1{
-    font-size: 3.5vw;
-    margin: 5px;
-}
+    #classname {
+        font-size: 2.2vw;
+        font-weight: 300;
+    }
 
-.displayer form{
-    width: 100%;
-    height: 100%;
-    margin: auto auto 10px auto;
-    padding: 8px;
-}
+    textarea {
+        height: 70px;
+        font-size: 1.8vw;
+    }
 
-#classname,
-textarea{
-    margin: 7px 0;
-    width: 90%;
-    padding: 5px;
-}
+    form #sub,
+    form button {
+        padding: 5px;
+        font-size: 2.5vw;
+        border-radius: 5px;
+        margin: auto;
+    }
 
-#classname{
-    font-size: 2.2vw;
-    font-weight: 300;
-}
+    footer {
+        width: 100%;
+        height: max-content;
+        padding: 1rem;
+    }
 
-textarea{
-    height: 70px;
-    font-size: 1.8vw;
-}
+    .foot {
+        width: 100%;
+        height: 100%;
+        gap: 5px;
+    }
 
-form #sub,
-form button{
-    padding: 5px;
-    font-size: 2.5vw;
-    border-radius: 5px;
-    margin: auto;
-}
+    .copyright {
+        font-size: 3vw;
+        font-weight: 500;
+    }
 
-/*======================footer style start===============*/
+    .github {
+        font-size: 3vw;
+    }
 
-footer{
-    width: 100%;
-    height: max-content;
-    padding: 1rem;
-}
+    .github img {
+        width: 2rem;
+        height: 2rem;
+        margin: 5px;
+    }
 
-.foot{
-    width: 100%;
-    height: 100%;
-    gap: 5px;
-}
-
-
-.cpoyright{
-    font-size: 3vw;
-    font-weight: 500;
-}
-
-.github{
-    font-size: 3vw;
-}
-
-.github img{
-    width: 2rem;
-    height: 2rem;
-    margin: 5px;
-}
-
-.mail{
-    font-size: 3vw;
-}
-
-
+    .mail {
+        font-size: 3vw;
+    }
 }
