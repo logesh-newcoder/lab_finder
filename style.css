@@ -204,7 +204,7 @@ a{
 
 /*======================media query for phone view===============*/
 
-@media (max-width:780px) {
+@media (max-width:480px) {
     /*======================nav style start===============*/
 
 nav .top h2{
