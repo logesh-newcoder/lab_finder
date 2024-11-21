@@ -1,0 +1,243 @@
+* {
+
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-areas: 'head' 'main';
+    grid-template-rows: auto 1fr;
+}
+header{
+    grid-area: head;
+}
+main{
+    grid-area: main;
+    padding: 10px;
+}
+footer{
+    grid-area: footer;
+}
+
+
+/*======================top style start===============*/
+header .top{
+    width: 100%;
+    background-color: steelblue;
+    padding: 10px;
+    position: relative;
+}
+.top h2 {
+    text-align: center;
+    font-size: 3.5vw;
+}
+.top a{
+    position: absolute;
+    top: 0%;
+    right: 0.7rem;
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top a img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+/*======================table style start===============*/
+
+main .table {
+    width: 100%;
+    height: max-content;
+    margin: 15px 0;
+}
+
+table {
+    min-width: 80%;
+    max-width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+table .dayper {
+    background-color: steelblue;
+    font-weight: 300;
+}
+
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    font-size: 2.2vw;
+}
+
+td button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 1.9vw;
+}
+
+/*======================table down displayer form style start===============*/
+
+main .displayer {
+    min-width: 85%;
+    max-width: 95%;
+    background-color: #333;
+    margin: auto auto 2rem auto;
+    border: 4px solid steelblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.displayer h1 {
+    font-size: 2vw;
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+
+.displayer form {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 4px solid steelblue;
+    border-radius: 10px;
+    margin: auto auto 10px auto;
+    padding: 8px;
+    text-align: center;
+}
+#classname,
+textarea {
+    color: black;
+    margin: 10px 0;
+    width: 90%;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#classname{
+    font-size: 1.7vw;
+    font-weight: 300;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+    font-size: 1.5vw;
+}
+
+form #sub,
+form button {
+    padding: 8px;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+form #sub {
+    background-color: red;
+}
+
+form button {
+    background-color: green;
+}
+.php{
+    display: none;
+}
+/*======================media query for phone view===============*/
+
+@media (max-width: 780px) {
+/*======================top style start===============*/
+header .top{
+    padding: 5px;
+    position: relative;
+}
+.top h2 {
+    font-size: 1.5rem;
+}
+.top a{
+    right: 0.7rem;
+    height: 100%;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*======================table style start===============*/
+
+main .table {
+    margin: 10px 0;
+}
+
+table {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+td, th {
+    font-size: 2.3vw;
+}
+
+td button {
+    padding: 5px;
+    font-size: 2.8vw;
+}
+
+/*======================table down displayer form style start===============*/
+
+main .displayer {
+    width: 90%;
+    margin: auto auto 0rem auto;
+    padding: 10px;
+}
+
+.displayer h1 {
+    font-size: 3.5vw;
+    margin: 5px;
+}
+
+.displayer form {
+    margin: auto auto 7px auto;
+    padding: 8px;
+}
+
+#classname,
+textarea {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+#classname {
+    font-size: 2.2vw;
+    font-weight: 400;
+}
+
+textarea {
+    height: 70px;
+    font-size: 2vw;
+}
+
+form #sub,
+form button {
+    padding: 5px;
+    font-size: 2vw;
+    margin: auto;
+}
+
+}
