@@ -8,10 +8,11 @@ submitButton.style.display = "none";
 deleteButton.style.display = "none";
 
 // Function to display class information when a class is selected
-function showInfo(className) {
+function showInfo(className,item) {
     // Show delete button and set class name in the input
     deleteButton.style.display = "block";
-    selectedClassInput.value = className;
+    let items=item.textContent;
+    selectedClassInput.value = items;
 
     // Get the class information and class ID from the DOM
     let classInfoElement = document.getElementById(className);
