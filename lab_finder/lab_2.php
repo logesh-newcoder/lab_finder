@@ -27,51 +27,51 @@
                 <!-- Each day of the week with class buttons -->
                 <tr>
                     <th class="dayper">MON</th>
-                    <td><button onclick="showInfo('CLA-101')">CLA-101</button></td>
-                    <td><button onclick="showInfo('CLA-102')">CLA-102</button></td>
-                    <td><button onclick="showInfo('CLA-103')">CLA-103</button></td>
-                    <td><button onclick="showInfo('CLA-104')">CLA-104</button></td>
-                    <td><button onclick="showInfo('CLA-105')">CLA-105</button></td>
+                    <td colspan="3"><button onclick="showInfo('CLA-101',this)">BSC.CS-3-B</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-102',this)"></button></td>
+                    <td><button onclick="showInfo('CLA-103',this)"></button></td> -->
+                    <td colspan="2"><button onclick="showInfo('CLA-104',this)">FREE</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-105',this)"></button></td> -->
                 </tr>
                 <tr>
                     <th class="dayper">TUE</th>
-                    <td><button onclick="showInfo('CLA-106')">CLA-106</button></td>
-                    <td><button onclick="showInfo('CLA-107')">CLA-107</button></td>
-                    <td><button onclick="showInfo('CLA-108')">CLA-108</button></td>
-                    <td><button onclick="showInfo('CLA-109')">CLA-109</button></td>
-                    <td><button onclick="showInfo('CLA-110')">CLA-110</button></td>
+                    <td colspan="3"><button onclick="showInfo('CLA-106',this)">BSC.IT-2-B</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-107',this)"></button></td> -->
+                    <!-- <td><button onclick="showInfo('CLA-108',this)"></button></td> -->
+                    <td colspan="2"><button onclick="showInfo('CLA-109',this)">BSC.IT-2-A</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-110',this)"></button></td> -->
                 </tr>
                 <tr>
                     <th class="dayper">WED</th>
-                    <td><button onclick="showInfo('CLA-111')">CLA-111</button></td>
-                    <td><button onclick="showInfo('CLA-112')">CLA-112</button></td>
-                    <td><button onclick="showInfo('CLA-113')">CLA-113</button></td>
-                    <td><button onclick="showInfo('CLA-114')">CLA-114</button></td>
-                    <td><button onclick="showInfo('CLA-115')">CLA-115</button></td>
+                    <td colspan="3"><button onclick="showInfo('CLA-111',this)">BSC.CS-2-A</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-112',this)"></button></td>
+                    <td><button onclick="showInfo('CLA-113',this)"></button></td> -->
+                    <td colspan="2"><button onclick="showInfo('CLA-114',this)">FREE</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-115',this)"></button></td> -->
                 </tr>
                 <tr>
                     <th class="dayper">THU</th>
-                    <td><button onclick="showInfo('CLA-116')">CLA-116</button></td>
-                    <td><button onclick="showInfo('CLA-117')">CLA-117</button></td>
-                    <td><button onclick="showInfo('CLA-118')">CLA-118</button></td>
-                    <td><button onclick="showInfo('CLA-119')">CLA-119</button></td>
-                    <td><button onclick="showInfo('CLA-120')">CLA-120</button></td>
+                    <td colspan="3"><button onclick="showInfo('CLA-116',this)">BSC.CS-1-B</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-117',this)"></button></td>
+                    <td><button onclick="showInfo('CLA-118',this)"></button></td> -->
+                    <td colspan="2"><button onclick="showInfo('CLA-119',this)">BSC.CS-1-A</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-120',this)"></button></td> -->
                 </tr>
                 <tr>
                     <th class="dayper">FRI</th>
-                    <td><button onclick="showInfo('CLA-121')">CLA-121</button></td>
-                    <td><button onclick="showInfo('CLA-122')">CLA-122</button></td>
-                    <td><button onclick="showInfo('CLA-123')">CLA-123</button></td>
-                    <td><button onclick="showInfo('CLA-124')">CLA-124</button></td>
-                    <td><button onclick="showInfo('CLA-125')">CLA-125</button></td>
+                    <td colspan="3"><button onclick="showInfo('CLA-121',this)">BSC.CS-3-A</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-122',this)"></button></td>
+                    <td><button onclick="showInfo('CLA-123',this)"></button></td> -->
+                    <td colspan="2"><button onclick="showInfo('CLA-124',this)">BSC.IT-2-B</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-125',this)"></button></td> -->
                 </tr>
                 <tr>
                     <th class="dayper">SAT</th>
-                    <td><button onclick="showInfo('CLA-126')">CLA-126</button></td>
-                    <td><button onclick="showInfo('CLA-127')">CLA-127</button></td>
-                    <td><button onclick="showInfo('CLA-128')">CLA-128</button></td>
-                    <td><button onclick="showInfo('CLA-129')">CLA-129</button></td>
-                    <td><button onclick="showInfo('CLA-130')">CLA-130</button></td>
+                    <td colspan="3"><button onclick="showInfo('CLA-126',this)">BSC.IT-2-A</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-127',this)"></button></td>
+                    <td><button onclick="showInfo('CLA-128',this)"></button></td> -->
+                    <td colspan="2"><button onclick="showInfo('CLA-129',this)">BSC.CS-1-B</button></td>
+                    <!-- <td><button onclick="showInfo('CLA-130',this)"></button></td> -->
                 </tr>
             </table>
         </div>
