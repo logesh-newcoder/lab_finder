@@ -2,40 +2,45 @@ let submitButton = document.querySelector("#sub");
 let deleteButton = document.querySelector("#del");
 let infoTextarea = document.querySelector("#show");
 let selectedClassInput = document.querySelector("#classname");
+let selectUpdate = document.querySelector("#classupdate");
 let classIdInput = document.querySelector("#classid");
+
+const correctPassword = "labaccess"; // Define correct password once
 
 submitButton.style.display = "none";
 deleteButton.style.display = "none";
 
 // Function to display class information when a class is selected
-function showInfo(className) {
-    // Show delete button and set class name in the input
+function showInfo(className, item) {
     deleteButton.style.display = "block";
-    selectedClassInput.value = className;
-
-    // Get the class information and class ID from the DOM
+    
+    // Set class name and ID in the input fields
+    selectedClassInput.value = item.textContent;
     let classInfoElement = document.getElementById(className);
     let classId = classInfoElement.previousElementSibling.textContent.trim();
     classIdInput.value = classId;
-
+    
+    // Get class date and content from the PHP table structure
+    let classDate = classInfoElement.nextElementSibling ? 
+                    classInfoElement.nextElementSibling.textContent.trim() : '';
+    selectUpdate.value = classDate;
+    
     // Display class content in the textarea
     infoTextarea.value = classInfoElement.textContent;
 }
 
 // Function to handle the delete action
 function deleteInfo() {
-    // Prompt user for password to allow editing
     let password = prompt("Please enter the password:");
-    const correctPassword = "edit"; // Correct password for editing
-
+    
     if (password === correctPassword) {
-        // Hide delete button and show submit button to allow update
         deleteButton.style.display = "none";
         submitButton.style.display = "block";
 
         // Enable the textarea for editing
         infoTextarea.removeAttribute("readonly");
+        
     } else {
-        alert("Incorrect password"); // Show error if password is wrong
+        alert("Incorrect password");
     }
 }
