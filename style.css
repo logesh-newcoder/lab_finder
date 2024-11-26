@@ -72,6 +72,7 @@ table .dayper {
     background-color: steelblue;
     font-weight: 300;
     width: 25%;
+    padding: 5px;
 }
 
 table, td, th {
@@ -82,7 +83,6 @@ table, td, th {
 td, th {
     width: 15%;
     font-size: 2.2vw;
-    padding: 5px;
 }
 
 td button {
@@ -91,6 +91,7 @@ td button {
     border: none;
     padding: 10px;
     font-size: 1.9vw;
+    background-color: white;
 }
 
 /*======================table down displayer form style start===============*/
