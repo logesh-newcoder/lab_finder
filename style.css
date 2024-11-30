@@ -87,7 +87,7 @@ table td button {
     background-color: white;
     border: none;
     font-size: 1.7rem;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 /*======================table down displayer form style start===============*/
@@ -132,7 +132,7 @@ textarea {
 #classname,
 #classupdate {
     font-size: 1.7rem;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 textarea {
@@ -198,7 +198,7 @@ form button {
 
     table td button {
         font-size: 1.3rem;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     /*======================table down displayer form style start===============*/
@@ -230,7 +230,7 @@ form button {
     #classname,
     #classupdate {
         font-size: 1.4rem;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     textarea {
@@ -371,7 +371,7 @@ form button {
 
     table td button {
         font-size: 0.8rem;
-        font-weight: 200;
+        font-weight: 300;
     }
 
     /*======================table down displayer form style start===============*/
@@ -400,7 +400,7 @@ form button {
     #classname,
     #classupdate {
         font-size: 0.7rem;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     textarea {
