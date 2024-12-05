@@ -157,10 +157,9 @@ textarea {
 }
 
 textarea {
-    height: 170px;
+    height: 180px;
     resize: none;
     font-size: 1.4rem;
-            background-color: #4cae4c;
     text-align: justify;
 }
 
@@ -266,7 +265,7 @@ textarea:focus {
     }
     
     textarea {
-        height: 140px;
+        height: 150px;
         font-size: 1.2rem;
         
     }
@@ -328,7 +327,7 @@ textarea:focus {
     }
     
     textarea {
-        height: 100px;
+        height: 130px;
         font-size: 0.8rem;
     }
     
