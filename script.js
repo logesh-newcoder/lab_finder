@@ -21,8 +21,7 @@ function showInfo(className, item) {
     classIdInput.value = classId;
     
     // Get class date and content from the PHP table structure
-    let classDate = classInfoElement.nextElementSibling ? 
-                    classInfoElement.nextElementSibling.textContent.trim() : '';
+    let classDate =classInfoElement.nextElementSibling.textContent.trim();
     selectUpdate.value = classDate;
     
     // Display class content in the textarea
